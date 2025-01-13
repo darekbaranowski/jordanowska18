@@ -4,7 +4,7 @@ import pandas as pd
 import datetime
 
 
-dt = pd.date_range("2024-01-01", "2024-01-12", freq="1h")
+dt = pd.date_range("2024-01-01", "2024-01-30", freq="1h")
 
 np.random.seed(0) # fix the random numbers so they are consistent
 randoms = np.random.rand((len(dt)))

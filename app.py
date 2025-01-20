@@ -18,7 +18,7 @@ uptime_2[randoms_2<0.02] = 0
 df = pd.DataFrame({"station 1 uptime": uptime_1,
                   "station 2 uptime": uptime_2},
                  index=dt)
-
+st.write("This shows some fake automated weather station (AWS, not that AWS) data. It is just a quick demo to see what I could do with streamlit. You can read a stream of conciousness blog post about it here https://callumrollo.com/using_streamlit.html")
 st.line_chart(df)
 
 temp_1 = 20 + 5 * np.sin(1 * 0.25 * np.arange(len(dt))) - randoms * 3

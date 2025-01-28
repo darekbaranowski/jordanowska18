@@ -1,13 +1,14 @@
 import pandas as pd
 import numpy as np
 import streamlit as st
+import openpyxl
 #%%
 #load data
 #data_in = pd.read_excel('liczniki_format.xlsx')
 gdrive_url ='https://docs.google.com/spreadsheets/d/12CgLOShxnppvIrDO_1VMuc2v_rGXvmaY/edit?usp=sharing&ouid=117100627735911271600&rtpof=true&sd=true'
 file_id=gdrive_url.split('/')[-2]
 data_url='https://drive.google.com/uc?id=' + file_id
-data_in = pd.read_excel(data_url)
+data_in = pd.read_excel(data_url,engine='openpyxl')
 #convert data from dm3 to m3
 data_in['GoracaWoda[m3]'] = data_in['GoracaWoda[m3]']/1000
 data_in['ZimnaWoda[m3]'] = data_in['ZimnaWoda[m3]']/1000

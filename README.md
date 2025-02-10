@@ -1,6 +1,3 @@
-# Test of an app for some data visualization
-
-
-# steps to reproduce:
+# App that runs some data visualization
 
 
